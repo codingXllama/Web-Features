@@ -3,7 +3,7 @@
 let sliderImages = document.querySelectorAll(".slide");
 let arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right');
-
+let txtHover = document.querySelectorAll('#txt1');
 let currentImage = 0;
 
 
@@ -27,6 +27,7 @@ function startSlide() {
     // accessing the first image in the '.slide' class
     // we set the display to block so that it shows
     sliderImages[0].style.display = 'block';
+    txtHover[0].style.display = "block";
 }
 
 
@@ -36,6 +37,7 @@ function slideLeft() {
     // we must first reset the slider
     reset();
     sliderImages[currentImage - 1].style.display = "block";
+    txtHover[currentImage - 1].style.display = "block";
     currentImage = currentImage - 1;
 }
 
@@ -46,6 +48,7 @@ function slideLeft() {
 function slideRight() {
     reset();
     sliderImages[currentImage + 1].style.display = "block";
+    txtHover[currentImage + 1].style.display = "block";
     currentImage = currentImage + 1;
 }
 

@@ -33,8 +33,17 @@ body,
     background-image: url(/img/1.jpg);
 }
 
+.slide:hover #txt1 {
+    color: blue;
+    opacity: 1;
+    border: 1px solid red;
+
+}
+
 .slide2 {
     background-image: url(/img/2.jpg);
+
+
 }
 
 .slide3 {
@@ -42,11 +51,31 @@ body,
 }
 
 #txt1 {
-    color: Red;
+    display: none;
+    /* color: Red;
     position: absolute;
     bottom: 10px;
-    font-size: 4rem;
+    font-size: 4rem; */
+
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    /* left: 0; */
+    /* right: 0; */
+    /* height: 100%; */
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(175, 175, 175, 0.527);
+
+    text-align: center;
+
 }
+
+
+
+
+
 
 /* creating the style for the image text which has the class of slide-content */
 .slide-content {
