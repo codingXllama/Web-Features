@@ -1,0 +1,90 @@
+body,
+#slider,
+.wrap,
+.slide-content {
+
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* overflow: hidden; */
+
+}
+
+/* .slide-content {
+    height: 100vh;
+    border: 1px solid red;
+    margin: 10px;
+} */
+
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide1 {
+    background-image: url(/img/1.jpg);
+}
+
+.slide2 {
+    background-image: url(/img/2.jpg);
+}
+
+.slide3 {
+    background-image: url(/img/6.jpg);
+}
+
+/* creating the style for the image text which has the class of slide-content */
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: bottom;
+}
+
+/* to change the appearance of the text we must access the slide content */
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* margin-top: -30%; */
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+
+}

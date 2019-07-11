@@ -1,0 +1,1 @@
+let sliderImages = document.querySelector
