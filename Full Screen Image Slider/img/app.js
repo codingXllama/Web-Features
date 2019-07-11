@@ -17,3 +17,62 @@ function reset() {
         sliderImages[i].style.display = 'none';
     }
 }
+
+
+//this function will initialize(set) the slider to work
+function startSlide() {
+    // first we must reset the images
+    reset();
+
+    // accessing the first image in the '.slide' class
+    // we set the display to block so that it shows
+    sliderImages[0].style.display = 'block';
+}
+
+
+// show the previous/left arrow image
+
+function slideLeft() {
+    // we must first reset the slider
+    reset();
+    sliderImages[currentImage - 1].style.display = "block";
+    currentImage = currentImage - 1;
+}
+
+
+
+// Showing the next/Right arrow image
+
+function slideRight() {
+    reset();
+    sliderImages[currentImage + 1].style.display = "block";
+    currentImage = currentImage + 1;
+}
+
+//Right arrow event listenr for when the user clicks the next arrow
+
+arrowRight.addEventListener('click', function () {
+    if (currentImage === sliderImages.length - 1) {
+        currentImage = -1
+    }
+    slideRight();
+});
+
+
+
+
+
+
+//Left arrow Click event listener for when the user clicks the left arrow 
+
+arrowLeft.addEventListener('click', function () {
+    if (currentImage === 0) {
+        currentImage = sliderImages.length;
+
+    }
+    slideLeft();
+
+});
+
+// function calls
+startSlide();
