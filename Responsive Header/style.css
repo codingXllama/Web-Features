@@ -2,7 +2,7 @@
 
 :root {
     /* this is avariable we can use when ever */
-    --background: rgba(0, 214, 170, .5);
+    --background: rgba(77, 156, 141, 0.5);
 }
 
 *,
@@ -183,6 +183,7 @@ nav.black ul {
 }
 
 nav li {
+    margin-top: 1em;
     margin-bottom: 1.2em;
     margin-right: 1.2em;
     /* text-align: center; */
@@ -228,7 +229,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+        /* grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr; */
         /* margin-top: 33px; */
     }
 
@@ -242,9 +243,10 @@ nav a:hover {
 
     .imageLogo #pageTitle {
         /* border: 1px solid red; */
-        margin-top: -22px;
+        /* margin-top: -22px; */
         font-size: 20px;
-        margin-top: -3px;
+        margin-top: 2px;
+        margin-bottom: 12px;
         /* color: white; */
         /* line-height: -88em; */
     }
@@ -253,15 +255,20 @@ nav a:hover {
     .imageLogo #captionTitle {
         /* border: 2px solid blue; */
         font-size: 15px;
-        margin-top: -15px;
-        /* line-height: -2em; */
+        margin-bottom: 12px;
+        /* line-height: 1em; */
     }
 
     .imageLogo #phoneTitle {
-        margin-top: -10px;
+        /* margin-top: -2px; */
+        /* border: 1px solid red; */
         font-size: 16px;
         display: inline-table;
         /* color: rgba(255, 0, 0, 0.78); */
+    }
+
+    .imageLogo #logo {
+        width: 25vh;
     }
 
     .imageLogo {
