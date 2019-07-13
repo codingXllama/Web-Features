@@ -50,7 +50,8 @@ body {
 .imageLogo #phoneTitle {
     margin-top: -20px;
     font-size: 16px;
-    color: rgba(255, 0, 0, 0.78)
+    color: rgba(255, 0, 0, 0.78);
+    /* color: rgba(87, 87, 87, 0.329); */
 }
 
 /* Creating the Content Style */
@@ -345,7 +346,7 @@ nav a:hover {
     }
 
     .imageLogo #logo {
-        width: 25vh;
+        width: 20vh;
         border-radius: 25px;
         margin-left: 10px;
     }
